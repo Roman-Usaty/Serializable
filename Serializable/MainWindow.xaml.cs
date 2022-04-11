@@ -48,7 +48,7 @@ namespace Serializable
 
         private void ButtonSelectFile_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog? openFileDialog = OpenSaveFile.ShowFileOpen("*.txt", "Текстовый документ (*.txt) | *.txt | Все файлы (*.*) | *.*", "Открыть файл", false, 1);
+            OpenFileDialog? openFileDialog = OpenSaveFile.ShowFileOpen("*.txt", "Все файлы (*.*) | *.*", "Открыть файл", false, 1);
             
             if (openFileDialog == null || openFileDialog.FileNames.Length <= 0) return;
 
